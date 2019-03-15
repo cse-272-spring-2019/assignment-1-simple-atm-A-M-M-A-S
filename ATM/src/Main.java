@@ -18,7 +18,7 @@ public class Main extends Application {
 		int i = Login.display((ArrayList<Account>) accounts);// please note all data are arbitrary, edit the csv file
 																// for any specefic testcase
 		if (i != -1) {
-			accounts.set(i, operations.display(accounts.get(i)));
+			accounts.set(i, Menue.display(accounts.get(i)));
 			Account.save(fl, (ArrayList<Account>) accounts);
 		}
 
